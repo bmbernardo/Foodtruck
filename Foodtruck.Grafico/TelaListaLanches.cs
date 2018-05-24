@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Foodtruck.Grafico
 {
-    public partial class TelaListaLanche : Form
+    public partial class TelaListaLanches : Form
     {
-        public TelaListaLanche()
+        public TelaListaLanches()
         {
             InitializeComponent();
         }

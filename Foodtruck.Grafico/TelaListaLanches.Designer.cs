@@ -1,6 +1,6 @@
 ﻿namespace Foodtruck.Grafico
 {
-    partial class TelaListaLanche
+    partial class TelaListaLanches
     {
         /// <summary>
         /// Required designer variable.
@@ -107,7 +107,7 @@
             this.btAdicionar.UseVisualStyleBackColor = true;
             this.btAdicionar.Click += new System.EventHandler(this.btAdicionar_Click);
             // 
-            // TelaListaLanche
+            // TelaListaLanches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,8 +116,8 @@
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btRemover);
             this.Controls.Add(this.btAdicionar);
-            this.Name = "TelaListaLanche";
-            this.Text = "TelaListaLanche";
+            this.Name = "TelaListaLanches";
+            this.Text = "TelaListaLanches";
             this.Load += new System.EventHandler(this.TelaListaLanches_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgLanches)).EndInit();
             this.ResumeLayout(false);

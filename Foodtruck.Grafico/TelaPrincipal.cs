@@ -120,7 +120,7 @@ namespace Foodtruck.Grafico
 
         private void lanchesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaListaLanche tela = new TelaListaLanche();
+            TelaListaLanches tela = new TelaListaLanches();
             tela.MdiParent = this;
             tela.Show();
         }
