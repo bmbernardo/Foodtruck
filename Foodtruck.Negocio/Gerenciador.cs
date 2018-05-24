@@ -256,7 +256,7 @@ namespace Foodtruck.Negocio
             return this.banco.Clientes.ToList();
         }
 
-        public List<Bebida> TodasAsBebidas() //teste git
+        public List<Bebida> TodasAsBebidas() //teste github
         {
             return this.banco.Bebidas.ToList();
         }
