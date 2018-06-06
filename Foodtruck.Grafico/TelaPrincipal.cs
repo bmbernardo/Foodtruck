@@ -120,7 +120,7 @@ namespace Foodtruck.Grafico
 
         private void lanchesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaListaLanches tela = new TelaListaLanches();
+            TelaListaLanche tela = new TelaListaLanche();
             tela.MdiParent = this;
             tela.Show();
         }
@@ -128,6 +128,13 @@ namespace Foodtruck.Grafico
         private void bebidasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaListaBebidas tela = new TelaListaBebidas();
+            tela.MdiParent = this;
+            tela.Show();
+        }
+
+        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListarPedidos tela = new ListarPedidos();
             tela.MdiParent = this;
             tela.Show();
         }

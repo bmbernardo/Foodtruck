@@ -45,6 +45,17 @@ namespace Foodtruck.Negocio
             return validacao;
         }
 
+        public List<Lanche> LanchesCadastrados()
+        {
+            return this.banco.Lanches.ToList();
+        }
+
+        public void AdicionarLancheAoPedido(Pedido pedido, Lanche lanche)
+        {
+            pedido.AdicionarLanche(lanche);
+            this.banco.SaveChanges();
+        }
+
         public Validacao AlterarCliente(Cliente clienteAlterado)
         {
             Validacao validacao = new Validacao();
@@ -54,6 +65,12 @@ namespace Foodtruck.Negocio
             clienteBanco.CPF = clienteAlterado.CPF;
             this.banco.SaveChanges();
             return validacao;
+        }
+
+        public void AdicionarBebidaAoPedido(Pedido pedido, Bebida bebida)
+        {
+            pedido.AdicionarBebida(bebida);
+            this.banco.SaveChanges();
         }
 
         public Validacao AlterarBebida(Bebida bebidaAlterado)
@@ -66,6 +83,39 @@ namespace Foodtruck.Negocio
             this.banco.SaveChanges();
             return validacao;
         }
+
+        public Pedido BuscarPedidoPorCodigo(long codigoPedido)
+        {
+            return this.banco.Pedidos
+                       .Where(pedido => pedido.Id == codigoPedido)
+                       .FirstOrDefault();
+        }
+
+        public List<Pedido> PedidosCadastrados()
+        {
+            return this.banco.Pedidos.ToList();
+        }
+
+        public Lanche BuscarLanchePorCodigo(long codigoLanche)
+        {
+            return this.banco.Lanches
+                       .Where(lanche => lanche.Id == codigoLanche)
+                       .FirstOrDefault();
+        }
+
+        public List<Bebida> BebidasCadastradas()
+        {
+            return this.banco.Bebidas.ToList();
+        }
+
+        public Bebida BuscarBebidaPorCodigo(long codigoBebida)
+        {
+            return this.banco.Bebidas
+                       .Where(bebida => bebida.Id == codigoBebida)
+                       .FirstOrDefault();
+        }
+
+        
 
         public Validacao AdicionarCliente(Cliente clienteAdicionado)
         {

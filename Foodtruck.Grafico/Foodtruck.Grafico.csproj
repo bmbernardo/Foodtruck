@@ -58,6 +58,18 @@
     <Compile Include="AdicionaPedido.Designer.cs">
       <DependentUpon>AdicionaPedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetalhesPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalhesPedido.Designer.cs">
+      <DependentUpon>DetalhesPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarPedidos.Designer.cs">
+      <DependentUpon>ListarPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManterBebida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +90,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaAdicionarBebidaPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAdicionarBebidaPedido.Designer.cs">
+      <DependentUpon>TelaAdicionarBebidaPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaAdicionarLanchePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAdicionarLanchePedido.Designer.cs">
+      <DependentUpon>TelaAdicionarLanchePedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaListaBebidas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,11 +114,11 @@
     <Compile Include="TelaListaClientes.Designer.cs">
       <DependentUpon>TelaListaClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaListaLanches.cs">
+    <Compile Include="TelaListaLanche.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaListaLanches.Designer.cs">
-      <DependentUpon>TelaListaLanches.cs</DependentUpon>
+    <Compile Include="TelaListaLanche.Designer.cs">
+      <DependentUpon>TelaListaLanche.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -102,8 +126,15 @@
     <Compile Include="TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util.cs" />
     <EmbeddedResource Include="AdicionaPedido.resx">
       <DependentUpon>AdicionaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalhesPedido.resx">
+      <DependentUpon>DetalhesPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarPedidos.resx">
+      <DependentUpon>ListarPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManterBebida.resx">
       <DependentUpon>ManterBebida.cs</DependentUpon>
@@ -123,14 +154,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TelaAdicionarBebidaPedido.resx">
+      <DependentUpon>TelaAdicionarBebidaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaAdicionarLanchePedido.resx">
+      <DependentUpon>TelaAdicionarLanchePedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaListaBebidas.resx">
       <DependentUpon>TelaListaBebidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaListaClientes.resx">
       <DependentUpon>TelaListaClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaListaLanches.resx">
-      <DependentUpon>TelaListaLanches.cs</DependentUpon>
+    <EmbeddedResource Include="TelaListaLanche.resx">
+      <DependentUpon>TelaListaLanche.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
